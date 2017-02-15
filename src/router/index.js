@@ -3,14 +3,16 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-import Hello from 'components/Hello'
+import Service from '../components/Service'
+import Neighbor from '../components/Neighbor'
+import Me from '../components/Me'
+import Forum from '../components/Forum'
 
 export default new Router({
   routes: [
-    {
-      path: '/',
-      name: 'Hello',
-      component: Hello
-    }
+    { path: '/service', component: Service },
+    { path: '/neighbor', component: Neighbor },
+    { path: '/me', component: Me },
+    { path: '/forum', component: Forum }
   ]
 })
